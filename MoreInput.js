@@ -47,13 +47,13 @@ class MoreInput {
         };
     }
     ReturnPi(){
-        return Math.PI
+        return Math.PI;
     }
     ReturnLetter(args){
-        return args.Letter
+        return args.Letter;
     }
     GetLetterIndexRange(args){
-        return args.Letter.substring(args.SN, args.FN)
+        return args.Letter.substring(args.SN, args.FN);
     }
 }
 
