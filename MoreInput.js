@@ -57,4 +57,4 @@ class MoreInput {
     }
 }
 
-Scratch.extensions.register(new MoreInput())
+Scratch.extensions.register(new MoreInput());
