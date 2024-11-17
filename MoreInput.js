@@ -1,6 +1,6 @@
 class MoreInput {
     constructor(runtime) {
-        this.runtime = runtime
+        this.runtime = runtime;
     } 
     
     getInfo() {
