@@ -2,7 +2,7 @@ class MoreLogic {
   getInfo() {
     return {
       id: 'MoreLogic',
-      name: '更多的邏輯方塊',
+      name: 'More Logic Options',
       blocks: [
         {
           opcode: 'notEqual',
@@ -49,15 +49,15 @@ class MoreLogic {
         },{
           opcode: 'returntrue',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: '真'
+          text: 'true'
         },{
           opcode: 'returnfalse',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: '假'
+          text: 'false'
         },{
           opcode: 'isInt',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: '[num]是整數?',
+          text: '[num]is an integer?',
           arguments: {
             num: {
               type: Scratch.ArgumentType.NUMBER,
@@ -67,7 +67,7 @@ class MoreLogic {
         },{
           opcode: 'ifReporter',
           blockType: Scratch.BlockType.REPORTER,
-          text: '如果[con]則返回[yes]否則返回[no]',
+          text: 'if[con]then return[yes], else return[no]',
           arguments: {
             con: {
               type: Scratch.ArgumentType.BOOLEAN
@@ -84,7 +84,7 @@ class MoreLogic {
         },{
           opcode: 'xor',
           blockType: Scratch.BlockType.BOOLEAN,
-          text: '[con1]異或[con2]',
+          text: '[con1]xor[con2]',
           arguments: {
             con1: {
               type: Scratch.ArgumentType.BOOLEAN
@@ -96,7 +96,7 @@ class MoreLogic {
         },{
           opcode: 'numberOrtext',
           blockType: Scratch.BlockType.REPORTER,
-          text: '數字或文字[nt]',
+          text: 'Number or text[nt]',
           arguments: {
             nt: {
               type: Scratch.ArgumentType.STRING,
@@ -118,7 +118,7 @@ class MoreLogic {
         },{
           opcode: 'scaleSwitch',
           blockType: Scratch.BlockType.REPORTER,
-          text: '尺度轉換[switchNum]從[frommin]～[frommax]到[tomin]～[tomax]',
+          text: 'scale conversion[switchNum]from[frommin]～[frommax]to[tomin]～[tomax]',
           arguments: {
             switchNum: {
               type: Scratch.ArgumentType.NUMBER,
@@ -144,7 +144,7 @@ class MoreLogic {
         },{
           opcode: 'roundtofloat',
           blockType: Scratch.BlockType.REPORTER,
-          text: '數字[num]四捨五入至小數點第[ord]位',
+          text: 'The number[num]is rounded to the [ord] decimal place',
           arguments: {
             num: {
               type: Scratch.ArgumentType.NUMBER,
@@ -158,7 +158,7 @@ class MoreLogic {
         },{
           opcode: 'editNum',
           blockType: Scratch.BlockType.REPORTER,
-          text: '數字[num]的[option]',
+          text: '[option] of a [num]',
           arguments: {
             num: {
               type: Scratch.ArgumentType.NUMBER,
@@ -172,7 +172,7 @@ class MoreLogic {
         },{
           opcode: 'specialsign',
           blockType: Scratch.BlockType.REPORTER,
-          text: '特殊符號[spe]',
+          text: 'special symbols[spe]',
           arguments: {
             spe: {
               type: Scratch.ArgumentType.STRING,
@@ -182,7 +182,7 @@ class MoreLogic {
         },{
           opcode: 'upperandlower',
           blockType: Scratch.BlockType.REPORTER,
-          text: '轉換[TEXT]到[FORMAT]',
+          text: 'convert [TEXT] to[FORMAT]',
           arguments: {
             TEXT: {
               type: Scratch.ArgumentType.STRING,
@@ -196,7 +196,7 @@ class MoreLogic {
         },{
           opcode: 'color',
           blockType: Scratch.BlockType.REPORTER,
-          text: '顏色[color]',
+          text: 'color [color]',
           arguments: {
             color: {
               type: Scratch.ArgumentType.COLOR,
@@ -206,7 +206,7 @@ class MoreLogic {
         },{
           opcode: 'mixColor',
           blockType: Scratch.BlockType.REPORTER,
-          text: '混合顏色 紅[r] 綠[g] 藍[b]',
+          text: 'Mix color red[r] green[g] blue[b]',
           arguments: {
             r: {
               type: Scratch.ArgumentType.NUMBER,
@@ -228,15 +228,15 @@ class MoreLogic {
           acceptReporters: false,
           items: [
           {
-            text: '相反數',
+            text: 'The opposite',
             value: 'wrap'
           },
           {
-            text: '倒數',
+            text: 'The reciprocal',
             value: 'divide'
           },
           {
-            text: '開根號',
+            text: 'The root',
             value: 'root'
           }
           ]
@@ -245,11 +245,11 @@ class MoreLogic {
           acceptReporters: false,
           items: [
           {
-            text: '圓周率',
+            text: 'PI',
             value: 'pi'
           },
           {
-            text: '尤拉數',
+            text: 'e',
             value: 'e'
           }
           ]
@@ -258,11 +258,11 @@ class MoreLogic {
           acceptReporters: false,
           items: [
           {
-            text: '大寫',
+            text: 'uppercase',
             value: 'up'
           },
           {
-            text: '小寫',
+            text: 'lowercase',
             value: 'low'
           }
           ]
